@@ -1,3 +1,35 @@
-h1 {
-  color: yellow;
+body {
+  background-color: #252627 !important;
+}
+
+h2 {
+  color: white;
+  text-align: left;
+  padding-bottom: 1%;
+}
+
+.jsx1 {
+  padding-bottom: 3%;
+}
+
+.jsx2 {
+  background-color: #353A3F;
+  padding-bottom: 3%;
+}
+
+.header-stories {
+  justify-content: center;
+  background-color: #252627;
+}
+
+.today {
+  justify-content: center;
+  background-color: #353A3F;
+}
+
+.today-header {
+  background-color: #353A3F;
+  padding-top: 2%;
+  padding-left: 2%;
+
 }
