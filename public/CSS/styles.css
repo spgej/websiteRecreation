@@ -9,8 +9,21 @@ h2 {
 }
 
 .navbar {
-  padding-top: 2% !important;
-  padding-bottom: 2% !important;
+  padding: 2% 0 !important;
+}
+
+.navbar-brand {
+  font-size: 2em !important;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 1.3rem;
+}
+
+.spc {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .mmx {
@@ -72,5 +85,10 @@ h2 {
   background-color: #353A3F;
   padding-top: 2%;
   padding-left: 2%;
+}
 
+.btn {
+  margin-left: 10px;
+  padding: 4px 25px !important;
+  background-color: rgba(176, 42, 33) !important;
 }
