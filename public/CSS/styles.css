@@ -10,7 +10,38 @@ h2 {
 
 .navbar {
   padding-top: 2% !important;
-  padding-bottom: 2% !important; 
+  padding-bottom: 2% !important;
+}
+
+.mmx {
+  background: rgba(58, 137, 236, 0.75);
+  padding: 1%;
+}
+
+.botw {
+  background: rgba(92, 183, 218, 0.75);
+  padding: 1%;
+}
+
+.me1 {
+  background: rgba(236, 90, 89, 0.75);
+  padding: 1%;
+}
+
+.lotr {
+  background: rgba(110, 100, 72, 0.75);
+  padding: 1%;
+}
+
+.card-title {
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card-img-overlay {
+  padding: 0 !important;
 }
 
 .jsx1 {
