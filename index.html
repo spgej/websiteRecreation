@@ -3,9 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Website Recreation</title>
+  <title>Video Game News, Reviews, and Walkthroughs - IGN</title>
   <link rel="stylesheet" href="CSS/styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,7 +19,9 @@
 
   <div class="container spc">
     <nav class="navbar bg-transparent navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">IGN</a>
+      <a class="navbar-brand" href="#">
+        <img src="images/ign1.png" width="175" height="50" alt="">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -25,22 +31,22 @@
           <li class="nav-item active">
             <a class="nav-link" href="#">Store <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="#">News</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="#">Videos</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="#">Reviews</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="#">Boards</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="#">Wikis</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               More
             </a>
@@ -85,14 +91,16 @@
             <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
               <div class="me1">
                 <h5 class="card-title">Mass Effect Legendary Edition Review: The Same But Slightly Better</h5>
-              </div>            </div>
+              </div>
+            </div>
           </div>
           <div class="card bg-dark text-white" style="width: 20rem;">
             <img class="card-img" src="/images/lotr.jpg" alt="Card image">
             <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
               <div class="lotr">
                 <h5 class="card-title">LOTR: The Fellowship of the Ring, Cast Revisited, Again</h5>
-              </div>            </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -102,38 +110,119 @@
   <div class="container-fluid jsx2">
     <div class="container">
       <div class="row today-header">
-        <h2>Today's Top Stories</h2>
+        <h2 class="tts">Today's Top Stories</h2>
       </div>
       <div class="row today">
         <div class="card-deck">
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
+            <img class="card-img timg" src="images/poke.jpg" alt="Card image cap">
           </div>
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
+            <img class="card-img timg" src="images/marv.jpg" alt="Card image cap">
           </div>
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
+            <img class="card-img timg" src="images/twit.jpg" alt="Card image cap">
           </div>
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
+            <img class="card-img timg" src="images/cons.jpg" alt="Card image cap">
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="container-fluid jsx2">
+    <div class="container">
+      <div class="row">
+        <div class="card-deck">
+          <div class="card bg-dark text-white subcard" style="width: 18rem;">
+            <h5>Here's Why Pokemon Cards Still Sell</h5>
+          </div>
+          <div class="card bg-dark text-white subcard" style="width: 18rem;">
+            <h5>When will the MCU End?</h5>
+          </div>
+          <div class="card bg-dark text-white subcard" style="width: 18rem;">
+            <h5>Why You Should Care What Companies Want You Back in Office</h5>
+          </div>
+          <div class="card bg-dark text-white subcard" style="width: 18rem;">
+            <h5>This Console Has Officially Won the Console War</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container jsx4">
+    <div class="row">
+      <h2>Latest News</h2>
+    </div>
+    <hr class="lhr">
+    <div class="row rowh">
+      <div class="col-lg-3 wpg">
+        <div class="row mrow">
+          <h6>Latest</h6>
+        </div>
+        <div class="row">
+          <h6>Videos</h6>
+        </div>
+        <div class="row">
+          <h6>Games</h6>
+        </div>
+        <div class="row">
+          <h6>Movies</h6>
+        </div>
+        <div class="row">
+          <h6>TV</h6>
+        </div>
+        <div class="row">
+          <h6>Comics</h6>
+        </div>
+        <div class="row">
+          <h6>Playstation</h6>
+        </div>
+        <div class="row">
+          <h6>Xbox</h6>
+        </div>
+        <div class="row">
+          <h6>Nintendo</h6>
+        </div>
+        <div class="row">
+          <h6>Tech</h6>
+        </div>
+
+      </div>
+      <div class="col-lg-6">
+        <div class="row artro">
+          <div class="col-lg-6">
+            <img class="timg" src="images/dcr.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h4>DC Comics Reboot the Universe, Again?</h4>
+          </div>
+        </div>
+        <hr class="slhr">
+        <div class="row artro">
+          <div class="col-lg-6">
+            <img class="timg" src="images/gvs.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h4>Victor Officially Announced: Goku VS. Superman</h4>
+          </div>
+        </div>
+        <hr class="slhr">
+        <div class="row artro">
+          <div class="col-lg-6">
+            <img class="timg" src="images/tsvg.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h4>Is Twitch Still a Gaming Site?</h4>
+          </div>
+        </div>
+        <hr class="slhr">
+      </div>
+    </div>
+  </div>
+
 
 
 

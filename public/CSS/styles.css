@@ -1,11 +1,26 @@
 body {
   background-color: #252627 !important;
+  font-family: "Open Sans", sans-serif !important;
 }
 
 h2 {
   color: white;
   text-align: left;
-  padding-bottom: 1%;
+  padding-bottom: 2%;
+  padding-top: 1.5%;
+  font-weight: 800 !important;
+}
+
+h5 {
+  font-weight: 400 !important;
+}
+
+h4 {
+  color: white;
+}
+
+html, body {
+  height: 100% !important;
 }
 
 .navbar {
@@ -63,8 +78,47 @@ h2 {
 
 .jsx2 {
   background-color: #353A3F;
-  padding-bottom: 3%;
+  padding-bottom: 1%;
 }
+
+.rowh {
+  height: 100% !important;
+}
+
+.jsx4 {
+  padding-top: 2%;
+  height: 100% !important;
+
+}
+
+.wpg {
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.lhr {
+  border-color: grey;
+  padding-bottom: 1%;
+}
+
+.slhr {
+  border-color: white;
+  padding-top: 1%;
+}
+
+.artro {
+  padding-top: 1%;
+  padding-bottom: 2%;
+  display: block;
+}
+
+h6 {
+  color: white;
+  padding: 1%;
+}
+
 .card-img {
     width: 100%;
     height: 30vw;
@@ -84,7 +138,20 @@ h2 {
 .today-header {
   background-color: #353A3F;
   padding-top: 2%;
-  padding-left: 2%;
+}
+
+.timg {
+  width: 100%;
+  height: 12vw;
+  object-fit: cover;
+}
+
+.tts {
+
+}
+
+.subcard {
+  border: none !important;
 }
 
 .btn {
