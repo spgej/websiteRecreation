@@ -1,3 +1,5 @@
+/* ----- ELEMENTS ----- */
+
 body {
   background-color: #252627 !important;
   font-family: "Open Sans", sans-serif !important;
@@ -19,9 +21,21 @@ h4 {
   color: white;
 }
 
+h4:hover, h5:hover {
+  text-decoration: underline;
+  color: lightblue;
+}
+
+h6 {
+  color: white;
+  padding: 1%;
+}
+
 html, body {
   height: 100% !important;
 }
+
+/* ----- NAVBAR ----- */
 
 .navbar {
   padding: 2% 0 !important;
@@ -40,6 +54,8 @@ html, body {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
+/* ----- IMAGES ----- */
 
 .mmx {
   background: rgba(14, 42, 136, 0.75);
@@ -61,6 +77,20 @@ html, body {
   padding: 1%;
 }
 
+.card-img {
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+}
+
+.timg {
+  width: 100%;
+  height: 12vw;
+  object-fit: cover;
+}
+
+/* ----- CARDS ----- */
+
 .card-title {
   margin-block-start: 10px;
   margin-block-end: 10px;
@@ -71,6 +101,12 @@ html, body {
 .card-img-overlay {
   padding: 0 !important;
 }
+
+.subcard {
+  border-style: none !important;
+}
+
+/* ----- CONTAINERS, ROWS, COLUMNS ----- */
 
 .jsx1 {
   padding-bottom: 3%;
@@ -103,31 +139,10 @@ html, body {
   padding-right: 5%;
 }
 
-.lhr {
-  border-color: grey;
-  padding-bottom: 1%;
-}
-
-.slhr {
-  border-color: white;
-  padding-top: 1%;
-}
-
 .artro {
   padding-top: 1%;
   padding-bottom: 2%;
   display: block;
-}
-
-h6 {
-  color: white;
-  padding: 1%;
-}
-
-.card-img {
-    width: 100%;
-    height: 30vw;
-    object-fit: cover;
 }
 
 .header-stories {
@@ -145,19 +160,19 @@ h6 {
   padding-top: 2%;
 }
 
-.timg {
-  width: 100%;
-  height: 12vw;
-  object-fit: cover;
+/* ----- HORIZONTAL RULES ----- */
+
+.lhr {
+  border-color: grey;
+  padding-bottom: 1%;
 }
 
-.tts {
-
+.slhr {
+  border-color: white;
+  padding-top: 1%;
 }
 
-.subcard {
-  border: none !important;
-}
+/* ----- BUTTONS ----- */
 
 .btn {
   margin-left: 10px;
