@@ -1,5 +1,7 @@
-const express =  require("express");
+//jshint esversion:6
 
+const express =  require("express");
+const ejs = require("ejs");
 const app = express();
 
 app.use(express.urlencoded({
@@ -8,8 +10,10 @@ app.use(express.urlencoded({
 app.use(express.json());
 app.use(express.static('public'));
 
+app.set('view engine', 'ejs');
+
 app.get("/", (req, res)=>{
-  res.sendFile(__dirname + "/index.html");
+  res.render("main");
 });
 
 
