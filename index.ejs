@@ -1,0 +1,23 @@
+//Program for iterating through database to render
+//most recent objects as header on main page
+//WIP
+
+const reverse = articles.reverse();
+const n = 5;
+const slicedArray = reverse.slice(0, n);
+
+//final version in main.ejs --- dynamic header articles update
+
+<% for (var i = 0; i < 3; i++) { slicedArray.forEach((article)=>{ %>
+
+  <div class="card bg-dark text-white" style="width: 22rem;">
+    <img class="card-img" src="/images/mma.jpg" alt="Card image">
+    <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+      <div class="mmx">
+        <h5 class="card-title"> <%= article.title %></h5>
+      </div>
+    </div>
+  </div>
+
+<%  }); %>
+<%  } %>

@@ -6,38 +6,20 @@
     <div class="container">
       <div class="row header-stories">
         <div class="card-deck">
-          <div class="card bg-dark text-white" style="width: 20rem;">
-            <img class="card-img" src="/images/mma.jpg" alt="Card image">
-            <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
-              <div class="mmx">
-                <h5 class="card-title">Why Mega Man X is Definitely the Best Mega Man Game</h5>
+
+          <% slicedArray.forEach((article)=>{ %>
+
+            <div class="card bg-dark text-white" style="width: 22rem;">
+              <img class="card-img" src="/images/<%=article.imgtag%>.jpg" alt="Card image">
+              <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+                <div class="<%=article.imgtag%>">
+                  <h5 class="card-title"> <%= article.title %></h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card bg-dark text-white" style="width: 20rem;">
-            <img class="card-img" src="/images/loz.jpg" alt="Card image">
-            <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
-              <div class="botw">
-                <h5 class="card-title">50 Reasons Why You Shouldn't Listen to Buzzfeed Ever in Regards to Anything</h5>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-dark text-white" style="width: 20rem;">
-            <img class="card-img" src="/images/me.jpg" alt="Card image">
-            <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
-              <div class="me1">
-                <h5 class="card-title">Mass Effect Legendary Edition Review: The Same But Slightly Better</h5>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-dark text-white" style="width: 20rem;">
-            <img class="card-img" src="/images/lotr.jpg" alt="Card image">
-            <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
-              <div class="lotr">
-                <h5 class="card-title">LOTR: The Fellowship of the Ring, Cast Revisited, Again</h5>
-              </div>
-            </div>
-          </div>
+
+          <%  }); %>
+
         </div>
       </div>
     </div>
