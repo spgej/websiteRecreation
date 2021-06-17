@@ -1,4 +1,17 @@
 /* ----- ELEMENTS ----- */
+@media screen and (max-width: 991px) {
+  .wpg {
+    display: none !important;
+  }
+
+  .col-6 {
+    margin: auto;
+  }
+
+  h5 {
+    font-size: .75rem !important;
+  }
+}
 
 body {
   background-color: #252627 !important;
@@ -178,4 +191,10 @@ html, body {
   margin-left: 10px;
   padding: 4px 25px !important;
   background-color: rgba(176, 42, 33) !important;
+}
+
+@media screen and (max-width: 992px;) {
+  .gone {
+    color: yellow !important;
+  }
 }
