@@ -8,8 +8,17 @@
     margin: auto;
   }
 
+  .nav-item {
+    margin: auto !important;
+  }
+
+  .btn {
+    margin: auto !important;
+    justify-content: center !important;
+  }
+
   h5 {
-    font-size: .75rem !important;
+    font-size: .85rem !important;
   }
 }
 
