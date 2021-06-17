@@ -130,11 +130,11 @@ html, body {
 
 /* ----- CONTAINERS, ROWS, COLUMNS ----- */
 
-.jsx1 {
+.dtag1 {
   padding-bottom: 3%;
 }
 
-.jsx2 {
+.dtag2 {
   background-color: #353A3F;
   padding-bottom: 1%;
 }
@@ -143,7 +143,7 @@ html, body {
   height: 100% !important;
 }
 
-.jsx4 {
+.dtag4 {
   padding-top: 2%;
   height: 100% !important;
 
