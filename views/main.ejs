@@ -16,7 +16,7 @@
         <% slicedArray1.forEach((article)=>{ %>
 
         <div class="card bg-dark text-white" style="width: 22rem;">
-          <img class="card-img" src="/images/<%=article.imgtag%>.jpg" alt="Card image">
+          <img class="card-img zoom" src="/images/<%=article.imgtag%>.jpg" alt="Card image">
           <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
             <div class="<%=article.imgtag%>">
               <h5 class="card-title"> <%= article.title %></h5>
@@ -33,10 +33,6 @@
 
 <!-- End of top 4 articles header section -->
 
-<!-- The Plan is to add the same modularity to the next two containers, using 'older'
-slices of the database. -->
-
-
 <div class="container-fluid dtag2">
   <div class="container">
     <div class="row today-header">
@@ -46,9 +42,11 @@ slices of the database. -->
       <div class="card-deck">
 
         <% slicedArray2.forEach((article)=>{ %>
+
         <div class="card" style="width: 18rem;">
           <img class="card-img timg" src="images/<%=article.imgtag%>.jpg" alt="Card image cap">
         </div>
+
         <% }); %>
 
       </div>
@@ -62,9 +60,11 @@ slices of the database. -->
       <div class="card-deck">
 
         <% slicedArray2.forEach((article)=>{ %>
+
         <div class="card bg-dark text-white subcard" style="width: 18rem;">
           <h5><%= article.title %></h5>
         </div>
+
         <% }); %>
 
       </div>
@@ -83,7 +83,7 @@ slices of the database. -->
         <h6>Latest</h6>
       </div>
       <div class="row">
-        <h6 class="fa fa-video-camera" aria-hidden="true"> Videos</h6>
+        <h6>Videos</h6>
       </div>
       <div class="row">
         <h6>Games</h6>
@@ -111,34 +111,23 @@ slices of the database. -->
       </div>
 
     </div>
+
     <div class="col-6">
+
+      <% slicedArray3.forEach((article)=>{ %>
+
       <div class="row artro">
         <div class="col-lg-6">
-          <img class="timg" src="images/dcr.jpg" alt="">
+          <img class="timg" src="images/<%=article.imgtag%>.jpg" alt="">
         </div>
         <div class="col-lg-6">
-          <h4>DC Comics Reboot the Universe, Again?</h4>
+          <h4><%= article.title %></h4>
         </div>
       </div>
       <hr class="slhr">
-      <div class="row artro">
-        <div class="col-lg-6">
-          <img class="timg" src="images/gvs.jpg" alt="">
-        </div>
-        <div class="col-lg-6">
-          <h4>Victor Officially Announced: Goku VS. Superman</h4>
-        </div>
-      </div>
-      <hr class="slhr">
-      <div class="row artro">
-        <div class="col-lg-6">
-          <img class="timg" src="images/tsvg.jpg" alt="">
-        </div>
-        <div class="col-lg-6">
-          <h4>Is Twitch Still a Video Game Streaming Webite?</h4>
-        </div>
-      </div>
-      <hr class="slhr">
+
+      <% }); %>
+
     </div>
   </div>
 </div>
