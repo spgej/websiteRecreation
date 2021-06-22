@@ -46,8 +46,43 @@ const art4 = new Article({
   body: "lorem ipsum",
   imgtag: "lotr",
 });
+const art5 = new Article({
+  title: "Here's Why Pokemon Cards Still Sell",
+  body: "lorem ipsum",
+  imgtag: "poke",
+});
+const art6 = new Article({
+  title: "When will the MCU End?",
+  body: "lorem ipsum",
+  imgtag: "marv",
+});
+const art7 = new Article({
+  title: "Why You Should Care Which Companies Want You Back in Office",
+  body: "lorem ipsum",
+  imgtag: "twit",
+});
+const art8 = new Article({
+  title: "This Console Has Officially Won the Console War",
+  body: "lorem ipsum",
+  imgtag: "cons",
+});
+const art9 = new Article({
+  title: "DC Comics Reboot the Universe, Again?",
+  body: "lorem ipsum",
+  imgtag: "dcr",
+});
+const art10 = new Article({
+  title: "Victor Officially Announced: Goku VS. Superman",
+  body: "lorem ipsum",
+  imgtag: "gvs",
+});
+const art11 = new Article({
+  title: "Is Twitch Still a Video Game Streaming Webite?",
+  body: "lorem ipsum",
+  imgtag: "tsvg",
+});
 
-const artArray = [art1, art2, art3, art4];
+const artArray = [art1, art2, art3, art4, art5, art6, art7, art8, art9, art10, art11];
 
 app.get("/", (req, res) => {
   Article.find({}, (err, articles) => {
@@ -61,9 +96,13 @@ app.get("/", (req, res) => {
       });
       res.redirect("/");
     } else {
-      const slicedArray = articles.slice(Math.max(articles.length - 4, 0));
+      const slicedArray1 = articles.slice(0, 4);
+      const slicedArray2 = articles.slice(4, 8);
+      const slicedArray3 = articles.slice(8,);
       res.render("main", {
-        slicedArray: slicedArray,
+        slicedArray1: slicedArray1,
+        slicedArray2: slicedArray2,
+        slicedArray3: slicedArray3,
       });
     }
   });

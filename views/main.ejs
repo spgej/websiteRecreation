@@ -1,156 +1,147 @@
 <%- include("partials/header"); -%>
 
-  <!----- Top Stories ----->
+<!----- Top Stories ----->
 
-  <!-- The section below is a modular snippet for the header of the webpage which takes the 4
+<!-- The section below is a modular snippet for the header of the webpage which takes the 4
   articles most recently uploaded to the database and formats them into cards with a title anchored
   to link to the article and an image overlay. The image overlay is associated with the database
   object through the imgtag key in the database schema. To update the 4 articles display at the top,
   upload a new article and save the image using the same string as the imgtag -->
 
-  <div class="container-fluid dtag1">
-    <div class="container">
-      <div class="row header-stories">
-        <div class="card-deck">
+<div class="container-fluid dtag1">
+  <div class="container">
+    <div class="row header-stories">
+      <div class="card-deck">
 
-          <% slicedArray.forEach((article)=>{ %>
+        <% slicedArray1.forEach((article)=>{ %>
 
-            <div class="card bg-dark text-white" style="width: 22rem;">
-              <img class="card-img" src="/images/<%=article.imgtag%>.jpg" alt="Card image">
-              <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
-                <div class="<%=article.imgtag%>">
-                  <h5 class="card-title"> <%= article.title %></h5>
-                </div>
-              </div>
+        <div class="card bg-dark text-white" style="width: 22rem;">
+          <img class="card-img" src="/images/<%=article.imgtag%>.jpg" alt="Card image">
+          <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+            <div class="<%=article.imgtag%>">
+              <h5 class="card-title"> <%= article.title %></h5>
             </div>
-
-          <%  }); %>
-
+          </div>
         </div>
+
+        <%  }); %>
+
       </div>
     </div>
   </div>
+</div>
 
- <!-- End of top 4 articles header section -->
+<!-- End of top 4 articles header section -->
 
 <!-- The Plan is to add the same modularity to the next two containers, using 'older'
 slices of the database. -->
 
-  <div class="container-fluid dtag2">
-    <div class="container">
-      <div class="row today-header">
-        <h2 class="tts">Today's Top Stories</h2>
-      </div>
-      <div class="row today">
-        <div class="card-deck">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img timg" src="images/poke.jpg" alt="Card image cap">
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img timg" src="images/marv.jpg" alt="Card image cap">
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img timg" src="images/twit.jpg" alt="Card image cap">
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img timg" src="images/cons.jpg" alt="Card image cap">
-          </div>
+
+<div class="container-fluid dtag2">
+  <div class="container">
+    <div class="row today-header">
+      <h2 class="tts">Today's Top Stories</h2>
+    </div>
+    <div class="row today">
+      <div class="card-deck">
+
+        <% slicedArray2.forEach((article)=>{ %>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img timg" src="images/<%=article.imgtag%>.jpg" alt="Card image cap">
         </div>
+        <% }); %>
+
       </div>
     </div>
   </div>
+</div>
 
-  <div class="container-fluid dtag2">
-    <div class="container">
-      <div class="row">
-        <div class="card-deck">
-          <div class="card bg-dark text-white subcard" style="width: 18rem;">
-            <h5>Here's Why Pokemon Cards Still Sell</h5>
-          </div>
-          <div class="card bg-dark text-white subcard" style="width: 18rem;">
-            <h5>When will the MCU End?</h5>
-          </div>
-          <div class="card bg-dark text-white subcard" style="width: 18rem;">
-            <h5>Why You Should Care Which Companies Want You Back in Office</h5>
-          </div>
-          <div class="card bg-dark text-white subcard" style="width: 18rem;">
-            <h5>This Console Has Officially Won the Console War</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container dtag4">
+<div class="container-fluid dtag2">
+  <div class="container">
     <div class="row">
-      <h2>Latest News</h2>
-    </div>
-    <hr class="lhr">
-    <div class="row rowh">
-      <div class="col-lg-3 wpg">
-        <div class="row mrow">
-          <h6>Latest</h6>
-        </div>
-        <div class="row">
-          <h6 class="fa fa-video-camera" aria-hidden="true"> Videos</h6>
-        </div>
-        <div class="row">
-          <h6>Games</h6>
-        </div>
-        <div class="row">
-          <h6>Movies</h6>
-        </div>
-        <div class="row">
-          <h6>TV</h6>
-        </div>
-        <div class="row">
-          <h6>Comics</h6>
-        </div>
-        <div class="row">
-          <h6>Playstation</h6>
-        </div>
-        <div class="row">
-          <h6>Xbox</h6>
-        </div>
-        <div class="row">
-          <h6>Nintendo</h6>
-        </div>
-        <div class="row">
-          <h6>Tech</h6>
-        </div>
+      <div class="card-deck">
 
-      </div>
-      <div class="col-6">
-        <div class="row artro">
-          <div class="col-lg-6">
-            <img class="timg" src="images/dcr.jpg" alt="">
-          </div>
-          <div class="col-lg-6">
-            <h4>DC Comics Reboot the Universe, Again?</h4>
-          </div>
+        <% slicedArray2.forEach((article)=>{ %>
+        <div class="card bg-dark text-white subcard" style="width: 18rem;">
+          <h5><%= article.title %></h5>
         </div>
-        <hr class="slhr">
-        <div class="row artro">
-          <div class="col-lg-6">
-            <img class="timg" src="images/gvs.jpg" alt="">
-          </div>
-          <div class="col-lg-6">
-            <h4>Victor Officially Announced: Goku VS. Superman</h4>
-          </div>
-        </div>
-        <hr class="slhr">
-        <div class="row artro">
-          <div class="col-lg-6">
-            <img class="timg" src="images/tsvg.jpg" alt="">
-          </div>
-          <div class="col-lg-6">
-            <h4>Is Twitch Still a Video Game Streaming Webite?</h4>
-          </div>
-        </div>
-        <hr class="slhr">
+        <% }); %>
+
       </div>
     </div>
   </div>
+</div>
+
+<div class="container dtag4">
+  <div class="row">
+    <h2>Latest News</h2>
+  </div>
+  <hr class="lhr">
+  <div class="row rowh">
+    <div class="col-lg-3 wpg">
+      <div class="row mrow">
+        <h6>Latest</h6>
+      </div>
+      <div class="row">
+        <h6 class="fa fa-video-camera" aria-hidden="true"> Videos</h6>
+      </div>
+      <div class="row">
+        <h6>Games</h6>
+      </div>
+      <div class="row">
+        <h6>Movies</h6>
+      </div>
+      <div class="row">
+        <h6>TV</h6>
+      </div>
+      <div class="row">
+        <h6>Comics</h6>
+      </div>
+      <div class="row">
+        <h6>Playstation</h6>
+      </div>
+      <div class="row">
+        <h6>Xbox</h6>
+      </div>
+      <div class="row">
+        <h6>Nintendo</h6>
+      </div>
+      <div class="row">
+        <h6>Tech</h6>
+      </div>
+
+    </div>
+    <div class="col-6">
+      <div class="row artro">
+        <div class="col-lg-6">
+          <img class="timg" src="images/dcr.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <h4>DC Comics Reboot the Universe, Again?</h4>
+        </div>
+      </div>
+      <hr class="slhr">
+      <div class="row artro">
+        <div class="col-lg-6">
+          <img class="timg" src="images/gvs.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <h4>Victor Officially Announced: Goku VS. Superman</h4>
+        </div>
+      </div>
+      <hr class="slhr">
+      <div class="row artro">
+        <div class="col-lg-6">
+          <img class="timg" src="images/tsvg.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <h4>Is Twitch Still a Video Game Streaming Webite?</h4>
+        </div>
+      </div>
+      <hr class="slhr">
+    </div>
+  </div>
+</div>
 
 
 
