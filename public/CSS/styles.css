@@ -120,6 +120,12 @@ html, body {
   margin-right: 10px;
 }
 
+.border {
+  overflow: hidden;
+  border-radius: 50px;
+  box-shadow: 5px 8px 8px rgb(20, 20, 20);
+}
+
 .card-img-overlay {
   padding: 0 !important;
 }

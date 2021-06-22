@@ -15,10 +15,10 @@
 
         <% slicedArray1.forEach((article)=>{ %>
 
-        <div class="card bg-dark text-white" style="width: 22rem;">
-          <img class="card-img zoom" src="/images/<%=article.imgtag%>.jpg" alt="Card image">
+        <div class="card border bg-dark text-white" style="width: 22rem;">
+          <img class="card-img" src="/images/<%=article.imgtag%>.jpg" alt="Card image">
           <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
-            <div class="<%=article.imgtag%>">
+            <div class="himg <%=article.imgtag%>">
               <h5 class="card-title"> <%= article.title %></h5>
             </div>
           </div>
