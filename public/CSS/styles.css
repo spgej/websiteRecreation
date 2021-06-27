@@ -27,6 +27,12 @@ body {
   font-family: "Open Sans", sans-serif !important;
 }
 
+h1 {
+  color: white;
+  font-weight: bold !important;
+  font-size: 3.25em !important;
+}
+
 h2 {
   color: white;
   text-align: left;
@@ -55,6 +61,10 @@ h6 {
 
 html, body {
   height: 100% !important;
+}
+
+p {
+  color: white;
 }
 
 /* ----- NAVBAR ----- */
@@ -173,6 +183,10 @@ html, body {
   display: block;
 }
 
+.artbody {
+  padding: 0;
+}
+
 .header-stories {
   justify-content: center;
   background-color: #252627;
@@ -189,6 +203,10 @@ html, body {
 }
 
 /* ----- HORIZONTAL RULES ----- */
+
+.fullhr {
+  border-color: white !important;
+}
 
 .lhr {
   border-color: grey;
@@ -212,4 +230,15 @@ html, body {
   .gone {
     color: yellow !important;
   }
+}
+
+/* ---------- */
+
+.artsubtitle {
+  color: grey !important;
+}
+
+.author {
+  color: #b02a22;
+  text-decoration: underline;
 }

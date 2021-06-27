@@ -108,6 +108,24 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/articles/:articleId", function(req, res) {
+  const requestedArticleId = req.params.articleId;
+
+    Article.findOne({
+      _id: requestedArticleId
+    }, (err, article) => {
+      if (!err) {
+        res.render("fullarticle", {
+          article: article,
+          title: article.title,
+          content: article.content
+        });
+      }
+    });
+
+});
+
+
 
 
 app.listen(3000, () => {

@@ -1,15 +1,24 @@
 <%- include("partials/header"); -%>
 
-<section>
+
+
+<div class="container">
   <div class="artheader">
-    <h1>This is the Title of This Article</h1>
-    <h4>This is a title caption about the article.</h4>
-    <p>By: Wepages</p>
+    <h1> <%=article.title%></h1>
+    <h4 class="artsubtitle">This is a title caption about the article.</h4>
+    <p class="author">By: Wepages</p>
   </div>
-</section>
+  <hr class="fullhr">
+</div>
+
+<div class="container">
+  <div class="artbody">
+    <p> <%= article.body %> </p>
+  </div>
+</div>
 
 
 
 
 
-<%- include('partials/footer'); -%>
+<%- include("partials/footer"); -%>
