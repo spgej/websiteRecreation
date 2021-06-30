@@ -27,6 +27,16 @@ body {
   font-family: "Open Sans", sans-serif !important;
 }
 
+a {
+  text-decoration: none;
+  color: white !important;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 h1 {
   color: white;
   font-weight: bold !important;

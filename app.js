@@ -108,6 +108,13 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/reviews", (req, res)=>{
+  res.render("reviews", {
+    artArray: artArray,
+  });
+});
+
+
 app.get("/articles/:articleId", function(req, res) {
   const requestedArticleId = req.params.articleId;
 

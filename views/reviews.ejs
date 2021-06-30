@@ -1,0 +1,22 @@
+<%- include("partials/header"); -%>
+
+<div class="col-6 container">
+
+  <% artArray.forEach((article)=>{ %>
+
+  <div class="row artro">
+    <div class="col-lg-6">
+      <img class="timg" src="images/<%=article.imgtag%>.jpg" alt="">
+    </div>
+    <div class="col-lg-6">
+      <h4><a href="/articles/<%=article._id%>"> <%=article.title%></a></h4>
+    </div>
+  </div>
+  <hr class="slhr">
+
+  <% }); %>
+
+</div>
+
+
+<%- include("partials/footer"); -%>

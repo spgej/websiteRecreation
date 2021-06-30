@@ -62,7 +62,7 @@
         <% slicedArray2.forEach((article)=>{ %>
 
         <div class="card bg-dark text-white subcard" style="width: 18rem;">
-          <h5><%= article.title %></h5>
+          <h5><a href="/articles/<%=article._id%>"> <%=article.title%></a></h5>
         </div>
 
         <% }); %>
@@ -121,7 +121,7 @@
           <img class="timg" src="images/<%=article.imgtag%>.jpg" alt="">
         </div>
         <div class="col-lg-6">
-          <h4><%= article.title %></h4>
+          <h4><a href="/articles/<%=article._id%>"> <%=article.title%></a></h4>
         </div>
       </div>
       <hr class="slhr">
