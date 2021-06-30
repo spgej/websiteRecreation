@@ -22,6 +22,10 @@
   }
 }
 
+.arev {
+  padding: none !important;
+}
+
 body {
   background-color: #252627 !important;
   font-family: "Open Sans", sans-serif !important;
@@ -46,8 +50,6 @@ h1 {
 h2 {
   color: white;
   text-align: left;
-  padding-bottom: 2%;
-  padding-top: 1.5%;
   font-weight: 800 !important;
 }
 
@@ -160,6 +162,10 @@ p {
   padding-bottom: 3%;
 }
 
+.spac {
+  margin-top: 2%;
+}
+
 .dtag2 {
   background-color: #353A3F;
   padding-bottom: 1%;
@@ -169,10 +175,13 @@ p {
   height: 100% !important;
 }
 
+.dtag5 {
+  height: 100% !important;
+}
+
 .dtag4 {
   padding-top: 2%;
   height: 100% !important;
-
 }
 
 .wpg {
@@ -220,6 +229,7 @@ p {
 
 .lhr {
   border-color: grey;
+  margin-top: 0 !important;
   padding-bottom: 1%;
 }
 

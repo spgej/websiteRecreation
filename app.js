@@ -108,9 +108,12 @@ app.get("/", (req, res) => {
   });
 });
 
+
 app.get("/reviews", (req, res)=>{
-  res.render("reviews", {
-    artArray: artArray,
+  Article.find({}, (err, articles)=>{
+    res.render("reviews", {
+      articles: articles
+    });
   });
 });
 
@@ -129,7 +132,6 @@ app.get("/articles/:articleId", function(req, res) {
         });
       }
     });
-
 });
 
 
