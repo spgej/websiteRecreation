@@ -15,7 +15,7 @@
 
         <% slicedArray1.forEach((article)=>{ %>
 
-        <div class="card border bg-dark text-white" style="width: 22rem;">
+        <div class="card bg-dark text-white" style="width: 22rem;">
           <img class="card-img" src="/images/<%=article.imgtag%>.jpg" alt="Card image">
           <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
             <div class="himg <%=article.imgtag%>">
@@ -61,7 +61,7 @@
 
         <% slicedArray2.forEach((article)=>{ %>
 
-        <div class="card bg-dark text-white subcard" style="width: 18rem;">
+        <div class="card border-0 bg-dark text-white subcard" style="width: 18rem;">
           <h5><a href="/articles/<%=article._id%>"> <%=article.title%></a></h5>
         </div>
 
