@@ -98,7 +98,7 @@ app.get("/", (req, res) => {
     } else {
       const slicedArray1 = articles.slice(0, 4);
       const slicedArray2 = articles.slice(4, 8);
-      const slicedArray3 = articles.slice(8,);
+      const slicedArray3 = articles.slice(8, );
       res.render("main", {
         slicedArray1: slicedArray1,
         slicedArray2: slicedArray2,
@@ -109,8 +109,8 @@ app.get("/", (req, res) => {
 });
 
 
-app.get("/reviews", (req, res)=>{
-  Article.find({}, (err, articles)=>{
+app.get("/reviews", (req, res) => {
+  Article.find({}, (err, articles) => {
     res.render("reviews", {
       articles: articles
     });
@@ -118,20 +118,25 @@ app.get("/reviews", (req, res)=>{
 });
 
 
-app.get("/articles/:articleId", function(req, res) {
+app.get("/articles/:articleId", (req, res) => {
   const requestedArticleId = req.params.articleId;
 
-    Article.findOne({
-      _id: requestedArticleId
-    }, (err, article) => {
-      if (!err) {
-        res.render("fullarticle", {
-          article: article,
-          title: article.title,
-          content: article.content
-        });
-      }
-    });
+  Article.findOne({
+    _id: requestedArticleId
+  }, (err, article) => {
+    if (!err) {
+      res.render("fullarticle", {
+        article: article,
+        title: article.title,
+        content: article.content
+      });
+    }
+  });
+});
+
+app.post("/articles/:articleId", (req, res) => {
+  const requestedArticleId = req.params.articleId;
+
 });
 
 
