@@ -117,6 +117,10 @@ app.get("/reviews", (req, res) => {
   });
 });
 
+app.get("/noroute", (req, res) => {
+  res.render("noroute");
+});
+
 
 app.get("/articles/:articleId", (req, res) => {
   const requestedArticleId = req.params.articleId;
