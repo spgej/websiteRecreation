@@ -117,7 +117,7 @@ app.get("/reviews", (req, res) => {
   });
 });
 
-app.get("/noroute", (req, res) => {
+app.get("/noroute", (req, res)=>{
   res.render("noroute");
 });
 
