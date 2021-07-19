@@ -13,7 +13,7 @@ app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 
-mongoose.connect("mongodb://localhost:27017/articleDB", {
+mongoose.connect("mongodb+srv://admin-psj:Samsonite1239@cluster0.wk7xa.mongodb.net/articleDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
