@@ -1,0 +1,299 @@
+p {
+  margin-bottom: 3px !important;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.navbar {
+  font-family: 'Rokkitt', serif;
+}
+
+.key {
+  margin-left: 10%;
+  font-size: 1.5vw;
+  color: #D17277;
+}
+
+.obj {
+  margin-right: 10%;
+  font-size: 1.5vw;
+}
+
+.codeprint {
+  font-size: 1.3vw;
+  margin-bottom: -5px !important;
+}
+
+h1 {
+  font-size: 5vw !important;
+  padding-top: 2%;
+  margin-bottom: -10px !important;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5vw !important;
+}
+
+.head {
+  text-align: center;
+  margin: 1% auto 1%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.atom {
+  background-color: #292c33;
+  padding: 2% !important;
+  border-radius: 0 5px 5px 0;
+  width: 50% !important;
+}
+
+.term {
+  background-color: #1d1d1e;
+  color: #72f24a;
+  padding-top: 1%;
+  border-radius: 5px 0 0 5px;
+  width: 50% !important;
+  padding: 2%;
+}
+
+@media screen and (min-width: 940px) {
+  .imgcon {
+    max-width: 58% !important;
+  }
+
+  .box {
+    max-width: 60% !important;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .box {
+    display: block !important;
+    flex-direction: column !important;
+  }
+
+  .term {
+    margin: 2% auto !important;
+    width: 100% !important;
+    height: 210px;
+    border-radius: 5px;
+  }
+
+  .atom {
+    margin: 2% auto !important;
+    width: 100% !important;
+    border-radius: 5px;
+    max-height: 210px;
+    padding-left: 2% !important;
+  }
+
+  .headimg {
+    max-width: 96%;
+    height: 20vw !important;
+  }
+
+  .headimg {
+    margin-bottom: 0 !important;
+  }
+
+  .ov {
+    margin: auto;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 7vw !important;
+  }
+
+  p {
+    font-size: 2.2vw !important;
+  }
+}
+
+.typewriter p:nth-child(2) {
+  width: 10em;
+  overflow: hidden;
+  border-right: .5em solid #72f24a;
+  white-space: nowrap;
+  margin: 0;
+  animation:
+    typing 2s steps(30, end),
+    blink-caret .75s step-end infinite;
+  animation-fill-mode: forwards;
+}
+
+.typewriter p:nth-child(3) {
+  width: 16.1em;
+  overflow: hidden;
+  opacity: 0;
+  border-right: .5em solid #72f24a;
+  white-space: nowrap;
+  margin: 0;
+  animation:
+    typing2 2s steps(30, end),
+    blink-caret .75s step-end infinite;
+  animation-delay: 1.3s;
+  animation-fill-mode: forwards;
+}
+
+.typewriter p:nth-child(4) {
+  width: 19em;
+  overflow: hidden;
+  opacity: 0;
+  border-right: .5em solid #72f24a;
+  white-space: nowrap;
+  margin: 0;
+  animation:
+    typing2 2s steps(30, end),
+    blink-caret .75s step-end infinite;
+  animation-delay: 2.7s;
+  animation-fill-mode: forwards;
+}
+
+.typewriter p:nth-child(5) {
+  width: 21.1em;
+  overflow: hidden;
+  opacity: 0;
+  border-right: .5em solid #72f24a;
+  margin: 0;
+  white-space: nowrap;
+  animation:
+    typing3 2s steps(30, end),
+    blink-caret .75s step-end infinite;
+  animation-delay: 4.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  0% {
+    max-width: 0;
+  }
+
+  100% {
+    max-width: 100%;
+    border: none;
+  }
+}
+
+@keyframes typing2 {
+  0% {
+    max-width: 0;
+    opacity: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  100% {
+    max-width: 100%;
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes typing3 {
+  0% {
+    max-width: 0;
+    opacity: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  100% {
+    max-width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #72f24a
+  }
+}
+
+.w {
+  width: 78% !important;
+}
+
+.offw {
+  background-image: linear-gradient(#e7e9eb, #FFFFFF);
+  margin: auto 20px !important;
+  height: 100%;
+  padding-bottom: 1%;
+}
+
+.imgcon {
+  margin-top: 2%;
+  border-radius: 10px;
+  max-width: 68% !important;
+}
+
+.biocon {
+  margin: 4%;
+}
+
+.bioimg {
+  text-align: center;
+  max-width: 30%;
+}
+
+.bio {
+
+}
+
+.abtim {
+  max-width: 80%;
+  margin: auto;
+}
+
+.headimg {
+  width: 100%;
+  margin-bottom: 1%;
+  height: 15vw;
+  object-fit: cover;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 3px !important;
+}
+
+.box {
+  margin: 1% auto;
+  display: flex;
+  max-width: 70% !important;
+}
+
+.headimg:hover {
+  height: 15vw;
+  object-fit: cover;
+  filter: blur(10px);
+  opacity: 70%;
+  transition: .3s ease-in-out;
+}
+
+.ov {
+  width: 80%;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.ov:hover .imgtxt {
+  visibility: visible;
+  transition: .5s;
+}
+
+.imgtxt {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vw;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
